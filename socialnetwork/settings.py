@@ -101,28 +101,28 @@ WSGI_APPLICATION = 'socialnetwork.wsgi.application'
 # }
 
 # desktop bookstop settings
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db-social1', 
+        'USER': 'postgres', 
+        'PASSWORD': 'Pa$$w0rd',
+        'HOST': 'localhost',
+        'PORT': '5433',
+    }
+}
+
+# desktop home settings
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'db-social', 
 #         'USER': 'postgres', 
-#         'PASSWORD': 'Pa$$w0rd',
+#         'PASSWORD': 'Microwave',
 #         'HOST': 'localhost',
 #         'PORT': '5433',
 #     }
 # }
-
-# desktop home settings
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db-social', 
-        'USER': 'postgres', 
-        'PASSWORD': 'Microwave',
-        'HOST': 'localhost',
-        'PORT': '5433',
-    }
-}
 
 
 # Password validation

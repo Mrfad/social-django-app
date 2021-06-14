@@ -7,8 +7,8 @@ class PostForm(forms.ModelForm):
         widget=forms.Textarea(attrs={
             'rows': '3',
             'placeholder': 'Say Something...'
-        })
-    )
+            }))
+
     class Meta:
         model = Post
         fields = ['body']
@@ -19,9 +19,8 @@ class CommentForm(forms.ModelForm):
         widget=forms.Textarea(attrs={
             'rows': '3',
             'placeholder': 'Say Something...'
-        })
-    )
+            }))
+
     class Meta:
         model = Comment
         fields = ['comment']
-
