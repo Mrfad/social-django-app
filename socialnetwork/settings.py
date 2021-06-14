@@ -101,28 +101,28 @@ WSGI_APPLICATION = 'socialnetwork.wsgi.application'
 # }
 
 # desktop bookstop settings
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'db-social', 
+#         'USER': 'postgres', 
+#         'PASSWORD': 'Pa$$w0rd',
+#         'HOST': 'localhost',
+#         'PORT': '5433',
+#     }
+# }
+
+# desktop home settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db-social', 
         'USER': 'postgres', 
-        'PASSWORD': 'Pa$$w0rd',
+        'PASSWORD': 'Microwave',
         'HOST': 'localhost',
         'PORT': '5433',
     }
 }
-
-# desktop home settings
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'mydb', 
-#         'USER': 'postgres', 
-#         'PASSWORD': 'Microwave',
-#         'HOST': 'localhost',
-#         'PORT': '5433',
-#     }
-# }
 
 
 # Password validation
@@ -160,6 +160,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+
 
 STATIC_URL = '/static/'
 MEDIA_ROOT =   BASE_DIR / 'media'
